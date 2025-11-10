@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Gann</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,7 +24,7 @@
             list-style: none;
             padding: 0;
             display: flex;
-            gap: 1em;
+            gap: 1.5em; /* Increased gap for better spacing with icons */
         }
         li {
             margin: 0;
@@ -32,9 +33,16 @@
             text-decoration: none;
             color: #0073e6;
             font-size: 1.2em;
+            /* Added to align icon and text */
+            display: flex; 
+            align-items: center; 
         }
         a:hover {
             text-decoration: underline;
+        }
+        /* Style for the icons */
+        .icon {
+            margin-right: 0.4em; /* Space between icon and text */
         }
     </style>
 </head>
@@ -42,9 +50,21 @@
     <div>
         <h1>John Gann</h1>
         <ul>
-            <li><a href="https://www.linkedin.com/in/john-gann" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/johngann" target="_blank">GitHub</a></li>
-            <li><a href="mailto:counter-moloch7a@icloud.com">Email</a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/john-gann" target="_blank">
+                    <i class="fab fa-linkedin icon"></i>LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/johngann" target="_blank">
+                    <i class="fab fa-github icon"></i>GitHub
+                </a>
+            </li>
+            <li>
+                <a href="mailto:counter-moloch7a@icloud.com">
+                    <i class="fas fa-envelope icon"></i>Email
+                </a>
+            </li>
         </ul>
     </div>
 </body>
