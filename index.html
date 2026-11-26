@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Gann</title>
+    <meta name="description" content="Personal site of John Gann, with links to LinkedIn, GitHub and email.">
+    <link rel="canonical" href="https://gann.dev/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#f4f4f4">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gann.dev/">
+    <meta property="og:title" content="John Gann">
+    <meta property="og:description" content="Personal site of John Gann, with links to LinkedIn, GitHub and email.">
+    <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         body {
@@ -13,8 +22,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            min-height: 100dvh;
             margin: 0;
+            padding: 1em;
+            box-sizing: border-box;
         }
         h1 {
             font-size: 3em;
@@ -24,6 +36,7 @@
             list-style: none;
             padding: 0;
             display: flex;
+            flex-wrap: wrap;
             gap: 1.5em; /* Increased gap for better spacing with icons */
         }
         li {
@@ -31,7 +44,7 @@
         }
         a {
             text-decoration: none;
-            color: #0073e6;
+            color: #005bb5; /* darker blue meets WCAG AA contrast on #f4f4f4 */
             font-size: 1.2em;
             /* Added to align icon and text */
             display: flex; 
@@ -47,25 +60,25 @@
     </style>
 </head>
 <body>
-    <div>
+    <main>
         <h1>John Gann</h1>
         <ul>
             <li>
-                <a href="https://www.linkedin.com/in/john-gann" target="_blank">
-                    <i class="fab fa-linkedin icon"></i>LinkedIn
+                <a href="https://www.linkedin.com/in/john-gann" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin icon" aria-hidden="true"></i>LinkedIn
                 </a>
             </li>
             <li>
-                <a href="https://github.com/johngann" target="_blank">
-                    <i class="fab fa-github icon"></i>GitHub
+                <a href="https://github.com/johngann" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github icon" aria-hidden="true"></i>GitHub
                 </a>
             </li>
             <li>
                 <a href="mailto:counter-moloch7a@icloud.com">
-                    <i class="fas fa-envelope icon"></i>Email
+                    <i class="fas fa-envelope icon" aria-hidden="true"></i>Email
                 </a>
             </li>
         </ul>
-    </div>
+    </main>
 </body>
 </html>
